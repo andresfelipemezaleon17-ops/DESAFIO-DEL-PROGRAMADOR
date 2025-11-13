@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Desafío del Programador</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="start" class="screen active card">
+      <h1>Desafío del Programador</h1>
+      <p>Ayuda al androide a llegar al final respondiendo 15 preguntas de Sistemas e Informática (nivel intermedio).</p>
+      <button id="btnStart">Iniciar juego</button>
+    </section>
+
+    <section id="game" class="screen card">
+      <div id="hud">
+        <span id="level">Nivel: 0 / 15</span>
+        <span id="score">Puntaje: 0</span>
+        <span id="lives">Vidas: 2</span>
+        <span id="timer">Tiempo: 0s</span>
+      </div>
+
+      <div id="scene">
+        <img id="background" src="assets/background.svg" alt="Fondo laboratorio">
+        <div id="track">
+          <img id="player" src="assets/androide.svg" alt="Androide">
+        </div>
+      </div>
+
+      <div id="question" class="card">
+        <h2 id="qText">Pregunta...</h2>
+        <div id="choices"></div>
+        <div id="explain" class="explain"></div>
+      </div>
+    </section>
+
+    <section id="end" class="screen card">
+      <h2 id="endTitle">Resultado</h2>
+      <p id="finalText"></p>
+      <button id="btnRestart">Jugar otra vez</button>
+    </section>
+
+    <footer>
+      <small>Proyecto: Sistemas e Informática — Autor: Andrés Meza</small>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
